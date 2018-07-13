@@ -1,0 +1,32 @@
+.render{
+    background: #E5F4FC;
+    height: 1000px;
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+
+.cancel{
+    background:#FEC2C2;
+    font-size:12px;
+    height: 10px;
+    margin: 80px 10px;
+    
+  }
+  
+  .p{
+    font-size: 16px;
+    padding-top: 0;
+  }
+  
+  input{
+    margin-left: 20px;
+  }
+  
+  .complete{
+    background:#8AEA92;
+    font-size:12px;
+    height: 30px;
+    margin: 80px 10px;
+    margin-left: 300px;
+  }

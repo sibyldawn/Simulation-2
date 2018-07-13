@@ -1,0 +1,59 @@
+.render{
+    background: #E5F4FC;
+    height: 1000px;
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .subheader{
+    height: 150px;
+    display:flex;
+    }
+  
+   p{
+    font-family: arial;
+    color: green;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-left:20px;
+    flex: 3
+  }
+  
+  .add{
+    background:#8AEA92;
+    font-size:12px;
+    width: 122px;
+    height: 30px;
+    margin: 80px 10px;
+    
+  }
+
+  .product-box{
+    background: #dedede;
+    height: 120px;
+    width: 350px;
+    margin: 0 auto;
+    display:flex;
+    
+  }
+  
+  .details-wrap{
+    flex: 5;
+  }
+  
+  
+  #x{  
+    background:#dedede;
+    border: 0;
+    flex:1;
+    height: 10px;
+    
+  }
+  
+  .details-wrap>p{
+    font-size: 11px;
+    color: black;
+    padding-left: 2px;
+    padding-top: 0;
+  }
+  
