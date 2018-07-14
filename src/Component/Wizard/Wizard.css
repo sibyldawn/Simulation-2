@@ -1,32 +1,139 @@
-.render{
-    background: #E5F4FC;
-    height: 1000px;
-    width: 800px;
-    margin: 0 auto;
-  }
+.header-wrap{
+  background: #519872;
+  height: 75px;
+  width:100%;
+  margin:-12px -8px;
+  position:fixed;
+  z-index:1;
+ 
+}
+
+.wrap{
+  background: #AFD4C0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.logo-flex{
+  width: 200px;
+
+  display: flex;
+  margin: 30px auto;
+}
+
+img{
+  width: 30px;
+  height: 30px;
+}
+
+span{
+  flex:1;
+  font-family: arial;
+  font-style: bold;
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+}
+
+html{
+  background: #afd4c0;
   
+}
+
+body{
+  height: 1000px;
+  widht: 400px;
+}
+
+.render{
+  background: #E5F4FC;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.subheader{
+  height: 150px;
+  display:flex;
+  }
+
+ p{
+  font-family: arial;
+  color: green;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-left:20px;
+  flex: 3
+}
+
+.add{
+  background:#8AEA92;
+  font-size:12px;
+  width: 122px;
+  height: 30px;
+  margin: 80px 10px;
+  
+}
+
+.product-box{
+  background: #dedede;
+  height: 120px;
+  width: 350px;
+  margin: 0 auto;
+  display:flex;
+  
+}
+
+.details-wrap{
+  flex: 5;
+}
+
+
+#x{  
+  background:#dedede;
+  border: 0;
+  flex:1;
+  height: 10px;
+  
+}
+
+.details-wrap>p{
+  font-size: 11px;
+  color: black;
+  padding-left: 2px;
+  padding-top: 0;
+}
+
+#home-listing{
+  font-size: 16px;
+  margin-top:3px;
+  padding-top: 2px;
+  color: black;
+}
 
 .cancel{
-    background:#FEC2C2;
-    font-size:12px;
-    height: 10px;
-    margin: 80px 10px;
-    
-  }
+  background:#FEC2C2;
+  font-size:12px;
+  height: 30px;
+  margin: 80px 10px;
   
-  .p{
-    font-size: 16px;
-    padding-top: 0;
-  }
-  
-  input{
-    margin-left: 20px;
-  }
-  
-  .complete{
-    background:#8AEA92;
-    font-size:12px;
-    height: 30px;
-    margin: 80px 10px;
-    margin-left: 300px;
-  }
+}
+
+.form>p{
+  font-size: 16px;
+  padding-top: 0;
+}
+
+input{
+  margin-left: 20px;
+  width: 300px;
+}
+
+.complete{
+  background:#8AEA92;
+  font-size:12px;
+  height: 30px;
+  margin: 80px 10px;
+  margin-left: 300px;
+}

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import { Link,Switch,Route } from 'react-router-dom';
+import { Link,Route } from 'react-router-dom';
 import {connect} from 'react-redux';
 import WizardTwo from './WizardTwo';
 import WizardThree from './WizardThree';
@@ -16,26 +16,24 @@ class Wizard extends Component{
         address:'',
         city:'',
         state:'',
-        zip: '',
-    }
+        zip: 0,
     }
 
-    addHouse=()=>{
+}
+    addHouse = () => {
         let newHouse = {
-            name: this.state.name,
-            address: this.state.address,
-            city: this.state.city,
-            state: this.state.state,
-            zip: this.state.zip,
+          name: this.props.name,
+          address: this.props.address,
+          city: this.props.city,
+          state: this.props.state,
+          zip: this.props.zip
         };
-        axios.post(`${baseUrl}`, newHouse).then(response => {
-            mapStateToProps(response);
-        })
-        console.log('newHouse', newHouse)
-        console.log('updatedState', this.state)
-        alert('House Added!', this.state);
-    }
+        axios.post(`${baseUrl}`, newHouse).then(response =>{
+          console.log('ADD HOUSE',response.data);
+          })
 
+        alert(`ADDED HOUSE:${this.props.name}, ${this.props.address},${this.props.city},${this.props.state},${this.props.zip}`);
+      }
     
     render(){
     const {updateName, updateAddress, updateCity, updateState, updateZip} = this.props;
@@ -60,14 +58,8 @@ class Wizard extends Component{
               <input type="text" onChange={(e)=> updateState(e.target.value)}></input>
               <p>Zip:</p>
               <input type="text" onChange={(e)=> updateZip(e.target.value)}></input><br/>
-              <button className="complete" onClick={this.addHouse}>Complete</button>
-              <Link to="/WizardTwo">Next</Link>
+              <button className="complete" onClick={(e) => this.addHouse(e.target.value)}><Link to="/dashboard">Complete</Link></button>
 
-              <Switch>
-                 <Route path='/wizard/Two' component={WizardTwo}/>
-                 <Route path='/wizard/Three' component={WizardThree}/>
-                 
-            </Switch> 
             </div>
           </div>
         </div>
